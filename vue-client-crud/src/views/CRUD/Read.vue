@@ -24,7 +24,7 @@
 import { mapState, mapActions } from "vuex";
 
 export default {
-  name: 'Index',
+  name: 'Read',
   props: [
     'currentUser'
   ],

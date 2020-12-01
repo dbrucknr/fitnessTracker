@@ -12,9 +12,16 @@ exports.create = (req, res) => {
     return;
   }
   // Create a Workout Object from request
+  console.log(req.body)
   const workout = {
     title: req.body.title,
+    date: req.body.date,
+    distance: req.body.distance,
     description: req.body.description,
+    hours: req.body.hours,
+    minutes: req.body.minutes,
+    seconds: req.body.seconds,
+    tenths: req.body.tenths,
     published: req.body.published ? req.body.published : false
   };
   // Save Workout in the database
